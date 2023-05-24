@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      main{
+       display: grid; 
+       grid-template-columns:300px 300px 300px 300px;
+       /* grid-template-columns: repeat(4, 1fr); */
+       grid-template-rows:400px 400px 400px 400px 400px ;
+       /* grid-template-rows: repeat(5, 400px); */
+       grid-template-areas: "k j i" "k g h" "f d e" "c c b" "a a b";
+       gap: 30px;
+      }
+
+      article{
+            border: 15px solid blueviolet;
+
+        }  
+ 
+     article:nth-of-type(1){
+       grid-area: a; 
+     }
+     article:nth-of-type(2){
+       grid-area: b;
+     }
+     article:nth-of-type(3){
+       grid-area: c;
+     }
+     article:nth-of-type(4){
+       grid-area: d;
+     }
+     article:nth-of-type(5){
+      grid-area: e;
+     }
+     article:nth-of-type(6){
+      grid-area: f;
+     }
+     article:nth-of-type(7){
+      grid-area: g;
+     }
+     article:nth-of-type(8){
+      grid-area: h;
+     }
+     article:nth-of-type(9){
+      grid-area: i;
+     }
+     article:nth-of-type(10){
+      grid-area: j;
+     }
+     article:nth-of-type(11){
+      grid-area: k;
+     }
+       
+     
+
+ 
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+ <main>
+    <article>num 1</article>
+    <article>num 2</article>
+    <article>num 3</article>
+    <article>num 4</article>
+    <article>num 5</article>
+    <article>num 6</article>
+    <article>num 7</article>
+    <article>num 8</article>
+    <article>num 9</article>
+    <article>num 10</article>
+    <article>num 11</article>
+ </main>
+</body>
+</html>
