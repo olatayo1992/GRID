@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @media screen and (max-width :767px){
+        main{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 300px);
+            grid-template-areas :"a" "b" "c" "d" "e" "f";
+             gap: 20px;
+        }
+        section{
+            border: 10px solid royalblue;
+        }
+    
+        section:nth-of-type(1) {
+            grid-area: a;
+        }
+        section:nth-of-type(2){
+           grid-area: b;
+        }
+        section:nth-of-type(3){
+            grid-area: c;
+        }
+        section:nth-of-type(4){
+            grid-area: d;
+        }
+        section:nth-of-type(5){
+            grid-area: e;
+        }
+        section:nth-of-type(6){
+            grid-area: f;
+        }
+    }
+    @media screen and (min-width :768px){
+        main{
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows:repeat(4, 300px);
+            grid-template-areas: "a a" "b c" "d e" "f f";
+             gap: 20px;
+        }
+        section{
+            border: 10px solid yellow;
+        }
+    
+        section:nth-of-type(1){
+            grid-area: a;
+        }
+        section:nth-of-type(2){
+           grid-area: b;
+        }
+        section:nth-of-type(3){
+            grid-area: c;
+        }
+        section:nth-of-type(4){
+            grid-area: d;
+        }
+        section:nth-of-type(5){
+            grid-area: e;
+        }
+        section:nth-of-type(6){
+            grid-area: f;
+        } 
+
+    }
+
+    @media screen and (min-width :1080px) {
+        main{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3,300px) ;
+            grid-template-areas: "a a b" "c d e" "f f f";
+             gap: 20px;
+
+        }
+
+        section{
+            border: 10px solid red;
+        }
+    
+        section:nth-of-type(1){
+            grid-area: a;
+        }
+        section:nth-of-type(2){
+           grid-area: b;
+        }
+        section:nth-of-type(3){
+            grid-area: c;
+        }
+        section:nth-of-type(4){
+            grid-area: d;
+        }
+        section:nth-of-type(5){
+            grid-area: e;
+        }
+        section:nth-of-type(6){
+            grid-area: f;
+        }  
+    }
+
+    </style>
+</head>
+<body>
+ <main>
+    <section>1</section>
+    <section>2</section>
+    <section>3</section>
+    <section>4</section>
+    <section>5</section>
+    <section>6</section>
+ </main>   
+</body>
+</html>
